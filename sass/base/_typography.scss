@@ -1,0 +1,21 @@
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $color-black;
+}
+
+.small-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    &-bold {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    &-bolder {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}

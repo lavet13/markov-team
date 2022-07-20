@@ -1,0 +1,165 @@
+.header {
+  grid-column: center-start / center-end;
+  font-size: 1.4rem;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+    &-cta {
+      display: flex;
+      align-items: center;
+    }
+
+    &-btn {
+      &:visited,
+      &:link {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-black;
+        padding: .5rem 1rem;
+        border-radius: 100px;
+        
+        transition: .2s all;
+      }
+
+      &:hover {
+        background-color: rgba($color-black, .15);
+      }
+    }
+
+    &-phone {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.header-navigation {
+  display: flex;
+  background-color: $color-grey-light-1;
+  padding: 2rem 0;
+   
+  &__links {
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid $color-black;
+    margin-right: auto;
+    background-color: $color-white;
+  }
+
+  &__languages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  &__link {
+    &:visited, // чисто для ссылок псевдоклассы
+    &:link {
+      display: inline-block; // для того чтобы можно было использовать padding, margin номарльно(
+      text-decoration: none;
+      color: $color-black;
+      padding: 1.2rem 2rem;
+
+      transition: all .2s;
+    }
+
+    &:first-child {
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+
+    &:hover {
+      background-color: rgba($color-black, .15);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+}
+
+.header-second-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    &:visited,
+    &:link {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: $color-black;
+      padding: .5rem 1rem;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $color-grey-light-2;
+    border-radius: 100px;
+    padding: .5rem 1rem;
+    font-family: $font-primary;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &-cart {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    position: relative;
+    margin-right: 1.5rem;
+
+    &:after {
+      content: attr(data-notif);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 1rem;
+      right: -.5rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 100px;
+      background-color: $color-white;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  &__img-cart {
+    display: block;
+    max-width: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+
+  }
+}
