@@ -1,0 +1,19 @@
+.stock__btn {
+  display: inline-block;
+
+  font-family: $font-primary;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: $color-black;
+  background-color: $color-grey-light-3;
+
+  border-radius: 100px;
+  border: 0;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: .2s all;
+
+  &:hover {
+    background-color: rgba($color-black, .1);
+  }
+}

@@ -1,0 +1,35 @@
+.goods {
+
+  &__heading-primary {
+    grid-column: center-start / center-end;
+    justify-self: start; // justify-items by default set to stretch
+    margin-bottom: 2rem;
+  }
+
+  &__grid {
+    grid-column: center-start / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem; // grid-row-gap, grid-column-gap Одинаковое проставление значений
+  }
+
+  &__card {
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-auto-rows: min-content;
+
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1.5rem rgba($color-black, .25);
+    padding: 2rem;
+  }
+
+  &__figure-img {
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+}

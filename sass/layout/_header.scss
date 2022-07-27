@@ -1,11 +1,12 @@
 .header {
-  grid-column: center-start / center-end;
   font-size: 1.4rem;
 
   &__info {
+    grid-column: center-start / center-end;
+
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 
     &-cta {
       display: flex;
@@ -36,10 +37,19 @@
 }
 
 .header-navigation {
+  grid-column: center-start / center-end;
+
   display: flex;
-  background-color: $color-grey-light-1;
   padding: 2rem 0;
-   
+
+  &__background {
+    grid-column: 1 / -1;
+
+    display: grid;
+    @include container;
+    background: $color-grey-light-1;
+  }
+
   &__links {
     display: flex;
     border-radius: 100px;
@@ -87,6 +97,8 @@
 }
 
 .header-second-navigation {
+  grid-column: center-start / center-end;
+
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem;
@@ -105,6 +117,13 @@
       font-size: 1.8rem;
       color: $color-black;
       padding: .5rem 1rem;
+      border-radius: 3px;
+
+      transition: .2s all;
+    }
+
+    &:hover {
+      background: rgba($color-black, .15);
     }
   }
 

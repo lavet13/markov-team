@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container">
-    <header class="header">
+<body>
+    <header class="header container">
         <div class="header__info">
             <div class="header__info-time small-text">
                 Режим работы: 10.00-20.00
@@ -29,35 +29,37 @@
             </div>
         </div> <!-- ./hedaer__info -->
 
-        <nav class="header-navigation">
-            <div class="header-navigation__links">
-                <a href="#" class="header-navigation__link">
-                    О нас
-                </a>
-                <a href="#" class="header-navigation__link">
-                    Доставка
-                </a>
-                <a href="#" class="header-navigation__link">
-                    Оплата
-                </a>
-                <a href="#" class="header-navigation__link">
-                    Отзывы
-                </a>
-                <a href="#" class="header-navigation__link">
-                    Вопросы
-                </a>
-                <a href="#" class="header-navigation__link">
-                    ОПТ
-                </a>
-                <a href="#" class="header-navigation__link">
-                    Услуги
-                </a>
-            </div>
-            <div class="header-navigation__languages">
-                <p class="small-text-bold">Язык сайта: EN/RU</p>
-                <p class="small-text-bolder">8(499)300-49-49</p>
-            </div>
-        </nav>
+        <div class="header-navigation__background">
+            <nav class="header-navigation">
+                <div class="header-navigation__links">
+                    <a href="#" class="header-navigation__link">
+                        О нас
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        Доставка
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        Оплата
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        Отзывы
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        Вопросы
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        ОПТ
+                    </a>
+                    <a href="#" class="header-navigation__link">
+                        Услуги
+                    </a>
+                </div>
+                <div class="header-navigation__languages">
+                    <p class="small-text-bold">Язык сайта: EN/RU</p>
+                    <p class="small-text-bolder">8(499)300-49-49</p>
+                </div>
+            </nav>
+        </div>
 
         <nav class="header-second-navigation">
             <div class="header-second-navigation__links">
@@ -78,5 +80,69 @@
         </nav>
 
     </header>
+
+    <div class="stock container">
+        <div class="stock__container">
+            <div class="stock__content">
+                <h1 class="big-text">3=2</h1>
+                <h2 class="medium-text">Закажи три футболки, а заплати только за две</h2>
+                <button class="stock__btn">Перейти в каталог</button>
+            </div>
+
+            <div class="stock__images">
+                <figure class="stock__figure-img stock__img--1">
+                    <img class="stock__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+                <figure class="stock__figure-img stock__img--2">
+                    <img class="stock__img" src="img/stock/shirt-2.png" alt="Shirt 2">
+                </figure>
+                <figure class="stock__figure-img stock__img--3">
+                    <img class="stock__img" src="img/stock/shirt-3.png" alt="Shirt 3">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="goods container">
+        <h1 class="goods__heading-primary medium-text">Что вы ищите?</h1>
+        
+        <div class="goods__grid">
+            <div class="goods__card">
+                <h2 class="bottom-mid-text">Верх</h2>
+                <p class="small-text">Футболки, майки</p>
+                <figure class="goods__figure-img">
+                    <img class="goods__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+            </div>
+            <div class="goods__card">
+                <h2 class="bottom-mid-text">Верх</h2>
+                <p class="small-text">Футболки, майки</p>
+                <figure class="goods__figure-img">
+                    <img class="goods__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+            </div>
+            <div class="goods__card">
+                <h2 class="bottom-mid-text">Верх</h2>
+                <p class="small-text">Футболки, майки</p>
+                <figure class="goods__figure-img">
+                    <img class="goods__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+            </div>
+            <div class="goods__card">
+                <h2 class="bottom-mid-text">Верх</h2>
+                <p class="small-text">Футболки, майки</p>
+                <figure class="goods__figure-img">
+                    <img class="goods__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+            </div>
+            <div class="goods__card">
+                <h2 class="bottom-mid-text">Верх</h2>
+                <p class="small-text">Футболки, майки</p>
+                <figure class="goods__figure-img">
+                    <img class="goods__img" src="img/stock/shirt-1.png" alt="Shirt 1">
+                </figure>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
