@@ -7,3 +7,12 @@ $color-grey-light-3: #C4C4C4;
 
 // FONT FAMILY
 $font-primary: 'Montserrat', sans-serif;
+
+// BORDER-RADIUS
+$br-1: 20px;
+$br-2: 2px 4px 27px rgba($color-black, 0.25), 0px 4px 4px rgba($color-black, 0.25);
+$br-2-hover: 2px 4px 35px rgba($color-black, 0.25), 0px 4px 10px rgba($color-black, 0.25);
+$br-2-active: 2px 4px 15px rgba($color-black, 0.25), 0px 4px 6px rgba($color-black, 0.25);
+
+// BOX-SHADOW
+$bs-1: 0 0 1.5rem rgba($color-black, .25);
