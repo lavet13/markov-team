@@ -1,14 +1,14 @@
 .stock {
   background-color: $color-grey-light-1;
   padding: 7rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 
   &__container {
     grid-column: center-start / center-end;
 
     display: flex;
   }
-  
+
   &__content {
     flex: 0 0 50%;
 
@@ -57,3 +57,4 @@
     }
   }
 }
+

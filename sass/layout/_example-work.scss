@@ -1,0 +1,47 @@
+.example-work {
+  grid-column: center-start / center-end;
+
+  & &__figure-img:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__indent {
+    margin-bottom: 9rem;
+  }
+
+  &__heading {
+    grid-column: center-start / center-end;
+
+    margin-bottom: 6rem;
+  }
+
+  display: flex;
+  align-items: center;
+
+  &__figure-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    border-radius: $br-3;
+    box-shadow: $bs-1;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    &:hover {
+      box-shadow: 0 0 2.5rem rgba($color-black, 0.25);
+      transform: translateY(-3px);
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,31 @@
+.QA {
+  grid-auto-rows: min-content;
+  grid-row-gap: 2rem;
+  justify-items: center;
+
+  background-color: $color-grey-light-1;
+
+  padding: 8rem 0;
+
+  &__heading {
+    grid-column: center-start / center-end;
+    text-align: center;
+  }
+
+  &__text {
+    grid-column: center-start / center-end;
+    text-align: center;
+    width: 32rem;
+  }
+
+  &__buttons {
+    display: inline-block;
+
+    text-align: center;
+    grid-column: center-start / center-end;
+
+    & .QA__btn:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

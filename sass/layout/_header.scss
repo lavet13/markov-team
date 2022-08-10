@@ -19,14 +19,14 @@
         display: inline-block;
         text-decoration: none;
         color: $color-black;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         border-radius: 100px;
-        
-        transition: .2s all;
+
+        transition: 0.2s all;
       }
 
       &:hover {
-        background-color: rgba($color-black, .15);
+        background-color: rgba($color-black, 0.15);
       }
     }
 
@@ -63,7 +63,7 @@
     flex-direction: column;
     align-items: flex-end;
   }
-  
+
   &__link {
     &:visited, // чисто для ссылок псевдоклассы
     &:link {
@@ -72,7 +72,7 @@
       color: $color-black;
       padding: 1.2rem 2rem;
 
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     &:first-child {
@@ -86,14 +86,13 @@
     }
 
     &:hover {
-      background-color: rgba($color-black, .15);
+      background-color: rgba($color-black, 0.15);
     }
 
     &:not(:last-child) {
       margin-right: 1.5rem;
     }
   }
-
 }
 
 .header-second-navigation {
@@ -116,14 +115,14 @@
       font-weight: 500;
       font-size: 1.8rem;
       color: $color-black;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       border-radius: 3px;
 
-      transition: .2s all;
+      transition: 0.2s all;
     }
 
     &:hover {
-      background: rgba($color-black, .15);
+      background: rgba($color-black, 0.15);
     }
   }
 
@@ -135,12 +134,19 @@
   &__btn {
     display: inline-block;
     background-color: $color-grey-light-2;
+    border: 2px solid $color-grey-light-4;
     border-radius: 100px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-family: $font-primary;
     font-size: 1.8rem;
     font-weight: 500;
     cursor: pointer;
+
+    transition: 0.2s all;
+
+    &:hover {
+      background: rgba($color-black, 0.2);
+    }
 
     &:not(:last-child) {
       margin-right: 1rem;
@@ -163,7 +169,7 @@
       justify-content: center;
       position: absolute;
       top: 1rem;
-      right: -.5rem;
+      right: -0.5rem;
       width: 1.4rem;
       height: 1.4rem;
       border-radius: 100px;
@@ -179,6 +185,5 @@
     width: 2.5rem;
     height: 2.5rem;
     object-fit: contain;
-
   }
 }

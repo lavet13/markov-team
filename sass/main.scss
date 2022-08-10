@@ -1,17 +1,23 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/btns";
+@import 'components/btns';
 
-@import "layout/container";
-@import "layout/goods";
-@import "layout/header";
-@import "layout/order";
-@import "layout/popular-goods";
-@import "layout/stock";
+@import 'layout/container';
+@import 'layout/example-work';
+@import 'layout/features';
+@import 'layout/goods';
+@import 'layout/header';
+@import 'layout/order';
+@import 'layout/popular-goods';
+@import 'layout/QA';
+@import 'layout/stock';
+
+@import 'pages/home';
+

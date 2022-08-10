@@ -4,7 +4,7 @@
   &__heading-primary {
     grid-column: center-start / center-end;
     justify-self: start; // justify-items by default set to stretch
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
   }
 
   &__grid {
@@ -13,6 +13,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 1.5rem; // grid-row-gap, grid-column-gap Одинаковое проставление значений
+
+    & > a {
+      &:link,
+      &:visited {
+        display: inline-block;
+        text-decoration: none;
+        color: $color-black;
+        transition: 0.2s all;
+      }
+
+      &:hover {
+        filter: grayscale(1);
+      }
+    }
   }
 
   &__card {
@@ -25,9 +39,16 @@
     box-shadow: $bs-1;
     padding: 2rem;
 
+    transition: 0.2s all;
+
     & div:first-child {
       margin-bottom: 2rem;
     }
+  }
+
+  &__grid > a:hover &__card {
+    box-shadow: 0 0 2.5rem rgba($color-black, 0.25);
+    transform: translateY(-3px);
   }
 
   &__figure-img {

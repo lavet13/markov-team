@@ -1,18 +1,23 @@
 $color-white: #fff;
 $color-black: #000;
-$color-grey-light-1: #EAEAEA;
-$color-grey-light-2: #D8D8D8;
-$color-grey-light-3: #C4C4C4;
-
+$color-grey-light-1: #eaeaea;
+$color-grey-light-2: #d8d8d8;
+$color-grey-light-3: #c4c4c4;
+$color-grey-light-4: #b4b4b4;
 
 // FONT FAMILY
 $font-primary: 'Montserrat', sans-serif;
 
 // BORDER-RADIUS
 $br-1: 20px;
-$br-2: 2px 4px 27px rgba($color-black, 0.25), 0px 4px 4px rgba($color-black, 0.25);
-$br-2-hover: 2px 4px 35px rgba($color-black, 0.25), 0px 4px 10px rgba($color-black, 0.25);
-$br-2-active: 2px 4px 15px rgba($color-black, 0.25), 0px 4px 6px rgba($color-black, 0.25);
+$br-2: 2px 4px 27px rgba($color-black, 0.25),
+  0px 4px 4px rgba($color-black, 0.25);
+$br-2-hover: 2px 4px 35px rgba($color-black, 0.25),
+  0px 4px 10px rgba($color-black, 0.25);
+$br-2-active: 2px 4px 15px rgba($color-black, 0.25),
+  0px 4px 6px rgba($color-black, 0.25);
+$br-3: 36px;
 
 // BOX-SHADOW
-$bs-1: 0 0 1.5rem rgba($color-black, .25);
+$bs-1: 0 0 1.5rem rgba($color-black, 0.25);
+
